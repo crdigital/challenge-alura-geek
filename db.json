@@ -1,0 +1,25 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "titulo": "Stormtrooper",
+      "imagem": "./images/stormtrooper.png",
+      "valor": "$ 60,00",
+      "icone_trash": "./images/🦆 icon _trash 2_.png"
+    },
+    {
+      "id": "2",
+      "titulo": "Game Boy",
+      "imagem": "./images/game_boy_classic.png",
+      "valor": "$ 60,00",
+      "icone_trash": "./images/🦆 icon _trash 2_.png"
+    },
+    {
+      "id": "3",
+      "titulo": "Stormtrooper",
+      "imagem": "./images/stormtrooper.png",
+      "valor": "$ 60,00",
+      "icone_trash": "./images/🦆 icon _trash 2_.png"
+    }
+  ]
+}

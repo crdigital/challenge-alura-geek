@@ -1,0 +1,146 @@
+
+* {   
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header__container{
+    background-color: #5300C8;
+    text-align: center;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.main__container h2{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.main__container__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #5300C8;
+    height: 40vh;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    padding: 15px;
+    font-size: 12px; 
+    width: 150px;   
+    line-height: 1.5rem; 
+    color: #fff;
+}
+
+.card p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icon__card {
+    cursor: pointer;
+}
+
+.main__container__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border: 2px solid #03318C;
+    border-radius: 2.5rem;
+    color: #03318C;
+    padding: 15px;
+    margin-bottom: 20px ; 
+    width: 100%; 
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;    
+}
+
+.button {
+    border: 0;
+    padding: 15px;
+    margin-left: 25px;
+    width: 188px;
+    height: 55px;
+    border: 2px solid #03318C;
+    color: #03318C;
+    border-radius: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button__color {
+    border: 0;
+    padding: 15px;
+    margin-left: 25px;
+    width: 188px;
+    height: 55px;
+    border: 2px solid #03318C;
+    background-color: #03318C;
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #03318C;
+ }
+ 
+ .footer{
+    background-color: #5300C8;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    height: 232px;
+ }
+
+ .footer p {
+    padding-bottom: 20px ;
+ }
+
+ .mensagem__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+@media(max-width: 1000px){
+    .header__container{
+        width: 100%;;
+    }
+
+    .main__container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+}
