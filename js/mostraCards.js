@@ -2,25 +2,19 @@ import { conectaAPI } from "./conectaAPI.js";
 
 const lista = document.querySelector("[data-lista]");
 
-async function deletaProduto(id){
-    try {
-        await conectaAPI.deletarProduto(id);
-
-        alert('Produto removido com sucesso!');    
-    } catch (error) {
-        alert(error);
-    }
+function mostra(id){
+    alert('id clicado:' + id);
 }
 
 export default function constroiCard(id,titulo,imagem,valor,icone_trash){
     const produto = document.createElement("div");
     produto.className = "card";
-    produto.innerHTML = `    
+    produto.innerHTML = `           
         <img src="${imagem}" />
         <p>${titulo}</p>
         <div>                        
             ${valor}
-            <img class="icon__card" src="${icone_trash}" alt="icone trash" width="20" onClick="${(event) => deletaProduto(id) }" title="${id}"/>
+            <img class="icon__card" src="${icone_trash}" alt="icone trash" width="20" onclick="mostra(${id})"/>            
         </div>
     `;
 

@@ -5,6 +5,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+        function mostra(id){
+            alert('Excluindo item de id:' + id);
+        }        
+    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,33 +22,7 @@
     <main class="main__container">
         <section class="main__container__left">
             <h2>Meus Produtos:</h2>
-            <div class="cards" data-lista>
-                <!-- <div class="card">
-                    <img src="./images/stormtrooper.png" />
-                    <p>Stormtrooper</p>
-                    <div>                        
-                        $ 60,00
-                        <img class="icon__card" src="./images/🦆 icon _trash 2_.png" alt="icone trash" width="20"/>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/game_boy_classic.png" />
-                    <p>Game Boy Classic</p>
-                    <div>                        
-                        $ 60,00
-                        <img class="icon__card" src="./images/🦆 icon _trash 2_.png" alt="icone trash" width="20"/>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/stormtrooper.png" />
-                   <p>Stormtrooper</p>
-                   <div>                        
-                    $ 60,00
-                    <img class="icon__card" src="./images/🦆 icon _trash 2_.png" alt="icone trash" width="20"/>
-                    </div>
-                </div>
-                -->
-            </div>
+            <div class="cards" data-lista></div>
         </section>
         <section class="main__container__right">
             <h2>Adicionar Produto:</h2>
@@ -62,13 +41,14 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section>        
     </main>
     <footer class="footer">
         <img src="./images/Logo.png" alt="Logo Alura Geek" />
         <p>Desenvolvido por Clayton Rodrigues</p>
         <span>Alura Latam - 2024</span>
-    </footer>
+    </footer> 
+    <script src="./js/deleta-produto.js" type="module"></script>
     <script src="./js/mostraCards.js" type="module"></script>
     <script src="./js/cria-produto.js" type="module"></script>
 </body>
